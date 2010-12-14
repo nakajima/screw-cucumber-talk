@@ -10,7 +10,7 @@
 
 # I live in Brooklyn.
 
-### That's right.
+### That’s right.
 
 !SLIDE
 
@@ -127,7 +127,7 @@ By Pat Nakajima
 
 !SLIDE
 
-# You WILL need custom steps
+# You WILL need custom steps.
 
 !SLIDE dark
 
@@ -295,7 +295,18 @@ Example
 
 !SLIDE
 
-# Your domain is better
+# Ctags for the friggin win.
+
+!SLIDE
+
+# Your domain is better.
+
+!SLIDE
+
+@@@ ruby
+
+    # Then he should be muted
+    group.should be_muted_for(pat)
 
 !SLIDE
 
@@ -306,13 +317,6 @@ Example
         membership_for(user).muted?
       end
     end
-
-!SLIDE
-
-@@@ ruby
-
-    # Then he should be muted
-    group.should be_muted_for(pat)
 
 !SLIDE
 
@@ -375,7 +379,11 @@ Example
 
 !SLIDE
 
-# You write the code.
+# You usually have to clean them up anyway.
+
+!SLIDE
+
+# So just write the code!
 
 !SLIDE
 
