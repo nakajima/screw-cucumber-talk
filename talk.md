@@ -393,7 +393,7 @@ Example
 
 !SLIDE
 
-# Questions
+# Questions?
 
 Let Josh Knowles tell me how wrong I am for a while.
 
