@@ -1,0 +1,39 @@
+html, body {
+  font-size: 30px;
+}
+
+.small {
+  font-size: 70%;
+}
+
+.red {
+  background: red;
+  color: white;
+}
+
+.green {
+  background: green;
+  color: white;
+}
+
+.dark {
+  background: #111;
+  color: white;
+}
+
+.logo {
+  font-size: 36px;
+  color: #143B42;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-top: -10px;
+}
+
+.hiring {
+  background: #143B42;
+  color: white;
+}
