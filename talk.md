@@ -4,11 +4,13 @@
 
 !SLIDE
 
-# Pat Nakajima
+# My name is Pat Nakajima
 
 !SLIDE
 
-# I live in BROOKLYN.
+# I live in Brooklyn.
+
+### That's right.
 
 !SLIDE
 
@@ -68,7 +70,7 @@ But not really.
 
 # Then use it.
 
-The plaque for the alternates is down in the ladies room. 
+The plaque for the alternates is down in the ladies room.
 
 !SLIDE
 
@@ -155,7 +157,7 @@ Example
     And @I add "Pat" with the number "610-123-1234"
     And @I add "Damon" with the number "302-123-1234"
 
-!SLIDE
+!SLIDE red
 
 # Problem!
 
@@ -180,6 +182,10 @@ Example
     And the group with the number "484-123-1234" adds "Pat" with the number "610-123-1234"
     And the group with the number "484-123-1234" adds "Brandon" with the number "302-123-1234"
 
+!SLIDE red
+
+# Problem!
+
 !SLIDE
 
 # Regular Expressions
@@ -187,6 +193,13 @@ Example
 !SLIDE
 
 # Don't Care About Most of that
+
+!SLIDE small
+
+@@@ text
+    Given a group with the number "484-123-1234"
+    And the group with the number "484-123-1234" adds "Pat" with the number "610-123-1234"
+    And the group with the number "484-123-1234" adds "Brandon" with the number "302-123-1234"
 
 !SLIDE
 
@@ -300,6 +313,53 @@ Example
 
     # Then he should be muted
     group.should be_muted_for(pat)
+
+!SLIDE
+
+# What About Web Steps?
+
+!SLIDE
+
+@@@ ruby
+
+    # Given I have an user with developer features enabled
+    user = create_user(:developer => true)
+    
+    # And a group
+    group = create_group(:creator => user)
+
+    # And I login
+    login_as user
+
+    # When I go to one of my groups
+    visit "/groups/#{group.to_param}"
+
+!SLIDE
+
+@@@ ruby
+
+    # This is tested on its own in sign_in_spec.rb
+    def login_as(user)
+      visit "/signin"
+      fill_in "session[phone_number]", :with => user.email
+      fill_in "session[password]", :with => "password"
+      click_button "Sign In"
+    end
+
+!SLIDE
+
+@@@ ruby
+    # And I follow "Developer Stuff"
+    click_link "Developer Area"
+
+    # Then the group should have a bot
+    group.reload.bot.should_not be_nil
+
+    # Then I should see "Developer Area"
+    page.should have_content("Developer Area")
+
+    # And I should see my token
+    page.should have_content(group.bot.token)
 
 !SLIDE center
 
