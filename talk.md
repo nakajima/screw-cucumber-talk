@@ -313,7 +313,7 @@ Example
 
 !SLIDE
 
-# Your domain is better.
+# Application Code > Test Helpers
 
 !SLIDE
 
