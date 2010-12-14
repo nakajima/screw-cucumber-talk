@@ -4929,7 +4929,7 @@ jQuery.extend( jQuery.easing,
         
           <div class="">
             <div id="slide-10" class="content">
-              <p>Ok. The talk STARTS NOW.</p>
+              <p>Ok. The talk starts NOW.</p>
             </div>
           </div>
         
@@ -4993,14 +4993,20 @@ jQuery.extend( jQuery.easing,
             </div>
           </div>
         
-          <div class=" dark">
+          <div class="">
             <div id="slide-21" class="content">
+              <h1>OK.</h1>
+            </div>
+          </div>
+        
+          <div class=" dark">
+            <div id="slide-22" class="content">
               <h3>The real problem</h3><h1>Step Definitions Are The Worst</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-22" class="content">
+            <div id="slide-23" class="content">
               <div class="highlight ruby code highlight"><pre><span class="no">When</span><span class="sr"> /^(?:|I )go to (.+)$/</span> <span class="k">do</span> <span class="o">|</span><span class="n">page_name</span><span class="o">|</span>
   <span class="n">visit</span> <span class="n">path_to</span><span class="p">(</span><span class="n">page_name</span><span class="p">)</span>
 <span class="k">end</span>
@@ -5021,31 +5027,31 @@ jQuery.extend( jQuery.easing,
           </div>
         
           <div class="">
-            <div id="slide-23" class="content">
+            <div id="slide-24" class="content">
               <h1>Not so bad, RIGHT?</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-24" class="content">
+            <div id="slide-25" class="content">
               <h1>Wrong.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-25" class="content">
+            <div id="slide-26" class="content">
               <h1>You WILL need custom steps.</h1>
             </div>
           </div>
         
           <div class=" dark">
-            <div id="slide-26" class="content">
+            <div id="slide-27" class="content">
               <p>Example</p><h1>Text message callbacks</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-27" class="content">
+            <div id="slide-28" class="content">
               <div class="highlight text code highlight"><pre>Given I have a group with the number "484-123-1234"
 And I add "Pat" with the number "610-123-1234"
 And I add "Damon" with the number "302-123-1234"
@@ -5054,19 +5060,19 @@ And I add "Damon" with the number "302-123-1234"
           </div>
         
           <div class="">
-            <div id="slide-28" class="content">
+            <div id="slide-29" class="content">
               <h1>Uh oh.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-29" class="content">
+            <div id="slide-30" class="content">
               <h2>Instance variables in step definitions</h2>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-30" class="content">
+            <div id="slide-31" class="content">
               <div class="highlight text code highlight"><pre>Given @I have a @group with the number "484-123-1234"
 And @I add "Pat" with the number "610-123-1234"
 And @I add "Damon" with the number "302-123-1234"
@@ -5075,31 +5081,31 @@ And @I add "Damon" with the number "302-123-1234"
           </div>
         
           <div class=" red">
-            <div id="slide-31" class="content">
+            <div id="slide-32" class="content">
               <h1>Problem!</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-32" class="content">
+            <div id="slide-33" class="content">
               <h1>Which step sets which variables?</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-33" class="content">
+            <div id="slide-34" class="content">
               <h1>Too much state.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-34" class="content">
+            <div id="slide-35" class="content">
               <h3>So what do we do?</h3><h1>Parameterize our steps</h1>
             </div>
           </div>
         
           <div class=" small">
-            <div id="slide-35" class="content">
+            <div id="slide-36" class="content">
               <div class="highlight text code highlight"><pre>Given a group with the number "484-123-1234"
 And the group with the number "484-123-1234" adds "Pat" with the number "610-123-1234"
 And the group with the number "484-123-1234" adds "Brandon" with the number "302-123-1234"
@@ -5108,25 +5114,25 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class=" red">
-            <div id="slide-36" class="content">
+            <div id="slide-37" class="content">
               <h1>Problem!</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-37" class="content">
+            <div id="slide-38" class="content">
               <h1>Regular Expressions</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-38" class="content">
-              <h1>Don't Care About Most of that</h1>
+            <div id="slide-39" class="content">
+              <h1>Don&rsquo;t Care About Most of that</h1>
             </div>
           </div>
         
           <div class=" small">
-            <div id="slide-39" class="content">
+            <div id="slide-40" class="content">
               <div class="highlight text code highlight"><pre>Given a group with the number "484-123-1234"
 And the group with the number "484-123-1234" adds "Pat" with the number "610-123-1234"
 And the group with the number "484-123-1234" adds "Brandon" with the number "302-123-1234"
@@ -5135,117 +5141,127 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class="">
-            <div id="slide-40" class="content">
+            <div id="slide-41" class="content">
               <h1>Need a beer to put out these flames.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-41" class="content">
+            <div id="slide-42" class="content">
               <h1>So no instance variables...</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-42" class="content">
+            <div id="slide-43" class="content">
               <h1>And no parameterizing...</h1>
             </div>
           </div>
         
           <div class=" dark">
-            <div id="slide-43" class="content">
+            <div id="slide-44" class="content">
               <h3>Too close for missiles.</h3><h1>I&rsquo;m switching to guns.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-44" class="content">
+            <div id="slide-45" class="content">
               <h1>Inline your step definitions</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-45" class="content">
+            <div id="slide-46" class="content">
               <h1>Capybara with Steak</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-46" class="content">
+            <div id="slide-47" class="content">
               <h1>Sounds delicious.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-47" class="content">
+            <div id="slide-48" class="content">
               <div class="highlight ruby code highlight"><pre><span class="c1"># Given a group with the number "484-123-1234"</span>
-<span class="n">group</span> <span class="o">=</span> <span class="n">create_group</span>
+<span class="n">group</span> <span class="o">=</span> <span class="n">create_group</span><span class="p">(</span><span class="ss">:phone_number</span> <span class="o">=&gt;</span> <span class="s2">"484-123-1234"</span><span class="p">)</span>
 
 <span class="c1"># And the group adds "Pat" with the number "610-123-1234"</span>
-<span class="n">pat</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">(</span><span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">"Pat"</span><span class="p">)</span>
+<span class="n">pat</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">(</span><span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">"Pat"</span><span class="p">,</span> <span class="ss">:phone_number</span> <span class="o">=&gt;</span> <span class="s2">"610-123-1234"</span><span class="p">)</span>
 <span class="n">group</span><span class="o">.</span><span class="n">add</span> <span class="n">pat</span>
 
 <span class="c1"># And the group adds "Damon" with the number "302-123-1234"</span>
-<span class="n">damon</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">(</span><span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">"Damon"</span><span class="p">)</span>
+<span class="n">damon</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">(</span><span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">"Damon"</span><span class="p">,</span> <span class="ss">:phone_number</span> <span class="o">=&gt;</span> <span class="s2">"302-123-1234"</span><span class="p">)</span>
 <span class="n">group</span><span class="o">.</span><span class="n">add</span> <span class="n">damon</span>
 </pre></div>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-48" class="content">
+            <div id="slide-49" class="content">
               <h1>Still super readable</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-49" class="content">
+            <div id="slide-50" class="content">
               <div class="highlight text code highlight"><pre>cat spec/acceptance/signup_spec.rb | grep '#'
 </pre></div>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-50" class="content">
+            <div id="slide-51" class="content">
               <h1>You need to craft usable APIs</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-51" class="content">
+            <div id="slide-52" class="content">
               <h1>Testing is a means to an end.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-52" class="content">
+            <div id="slide-53" class="content">
               <h1>You don&rsquo;t want to be an expert in your test suite.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-53" class="content">
+            <div id="slide-54" class="content">
               <h1>You want to be an expert in your domain.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-54" class="content">
+            <div id="slide-55" class="content">
               <div class="highlight ruby code highlight"><pre><span class="n">group</span> <span class="o">=</span> <span class="n">create_group</span>
 <span class="n">pat</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">(</span><span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">"Pat"</span><span class="p">)</span>
-<span class="n">group</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
+<span class="n">group</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span> <span class="c1"># Good!</span>
 </pre></div>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-55" class="content">
-              <h1>Helpers Are Good</h1>
+            <div id="slide-56" class="content">
+              <div class="highlight ruby code highlight"><pre><span class="c1"># Bad!</span>
+<span class="n">group</span> <span class="o">=</span> <span class="n">create_user</span>
+<span class="n">pat</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">(</span><span class="ss">:name</span> <span class="o">=&gt;</span> <span class="s2">"Pat"</span><span class="p">)</span>
+<span class="n">add</span><span class="p">(</span><span class="n">group</span><span class="p">,</span> <span class="n">pat</span><span class="p">)</span> <span class="c1"># No need for a test helper</span>
+</pre></div>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-56" class="content">
+            <div id="slide-57" class="content">
+              <h1>Pick the right test helpers</h1>
+            </div>
+          </div>
+        
+          <div class="">
+            <div id="slide-58" class="content">
               <div class="highlight ruby code highlight"><pre><span class="c1"># When pat texts "#mute" to the group</span>
 <span class="n">receive_text</span><span class="p">(</span>
   <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="n">group</span><span class="o">.</span><span class="n">phone_number</span><span class="p">,</span>
@@ -5257,19 +5273,19 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class="">
-            <div id="slide-57" class="content">
+            <div id="slide-59" class="content">
               <h1>Ctags for the friggin win.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-58" class="content">
+            <div id="slide-60" class="content">
               <h1>Your domain is better.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-59" class="content">
+            <div id="slide-61" class="content">
               <div class="highlight ruby code highlight"><pre><span class="c1"># Then he should be muted</span>
 <span class="n">group</span><span class="o">.</span><span class="n">should</span> <span class="n">be_muted_for</span><span class="p">(</span><span class="n">pat</span><span class="p">)</span>
 </pre></div>
@@ -5277,7 +5293,7 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class="">
-            <div id="slide-60" class="content">
+            <div id="slide-62" class="content">
               <div class="highlight ruby code highlight"><pre><span class="k">class</span> <span class="nc">Group</span>
   <span class="k">def</span> <span class="nf">muted_for?</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
     <span class="n">membership_for</span><span class="p">(</span><span class="n">user</span><span class="p">)</span><span class="o">.</span><span class="n">muted?</span>
@@ -5288,13 +5304,13 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class="">
-            <div id="slide-61" class="content">
+            <div id="slide-63" class="content">
               <h1>What About Web Steps?</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-62" class="content">
+            <div id="slide-64" class="content">
               <div class="highlight ruby code highlight"><pre><span class="c1"># Given I have an user with developer features enabled</span>
 <span class="n">user</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">(</span><span class="ss">:developer</span> <span class="o">=&gt;</span> <span class="kp">true</span><span class="p">)</span>
 
@@ -5311,7 +5327,7 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class="">
-            <div id="slide-63" class="content">
+            <div id="slide-65" class="content">
               <div class="highlight ruby code highlight"><pre><span class="c1"># This is tested on its own in sign_in_spec.rb</span>
 <span class="k">def</span> <span class="nf">login_as</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
   <span class="n">visit</span> <span class="s2">"/signin"</span>
@@ -5324,7 +5340,7 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class="">
-            <div id="slide-64" class="content">
+            <div id="slide-66" class="content">
               <div class="highlight ruby code highlight"><pre><span class="c1"># And I follow "Developer Stuff"</span>
 <span class="n">click_link</span> <span class="s2">"Developer Area"</span>
 
@@ -5341,49 +5357,49 @@ And the group with the number "484-123-1234" adds "Brandon" with the number "302
           </div>
         
           <div class=" center">
-            <div id="slide-65" class="content">
+            <div id="slide-67" class="content">
               <p><img height="100%" src="http://www.saasta.fi/saasta/wp-content/uploads/2009/11/business.jpg"></p>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-66" class="content">
+            <div id="slide-68" class="content">
               <h2>&ldquo;My business people read/write my .feature files&rdquo;</h2>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-67" class="content">
+            <div id="slide-69" class="content">
               <h1>They can still write the feature files.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-68" class="content">
+            <div id="slide-70" class="content">
               <h1>You usually have to clean them up anyway.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-69" class="content">
+            <div id="slide-71" class="content">
               <h1>So just write the code!</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-70" class="content">
+            <div id="slide-72" class="content">
               <h3>It&rsquo;s your job.</h3><h1>You&rsquo;re good at it.</h1>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-71" class="content">
+            <div id="slide-73" class="content">
               <h1>Questions?</h1><p>Let Josh Knowles tell me how wrong I am for a while.</p>
             </div>
           </div>
         
           <div class="">
-            <div id="slide-72" class="content">
+            <div id="slide-74" class="content">
               <h1>THANX! :)</h1>
             </div>
           </div>

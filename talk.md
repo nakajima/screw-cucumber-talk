@@ -44,7 +44,7 @@
 
 !SLIDE
 
-Ok. The talk STARTS NOW.
+Ok. The talk starts NOW.
 
 !SLIDE red
 
@@ -91,6 +91,10 @@ By Pat Nakajima
 !SLIDE
 
 # AM I RIGHT?
+
+!SLIDE
+
+# OK.
 
 !SLIDE dark
 
@@ -192,7 +196,7 @@ Example
 
 !SLIDE
 
-# Don't Care About Most of that
+# Don’t Care About Most of that
 
 !SLIDE small
 
@@ -234,15 +238,16 @@ Example
 !SLIDE
 
 @@@ ruby
+
     # Given a group with the number "484-123-1234"
-    group = create_group
+    group = create_group(:phone_number => "484-123-1234")
 
     # And the group adds "Pat" with the number "610-123-1234"
-    pat = create_user(:name => "Pat")
+    pat = create_user(:name => "Pat", :phone_number => "610-123-1234")
     group.add pat
 
     # And the group adds "Damon" with the number "302-123-1234"
-    damon = create_user(:name => "Damon")
+    damon = create_user(:name => "Damon", :phone_number => "302-123-1234")
     group.add damon
 
 !SLIDE
@@ -277,11 +282,20 @@ Example
 
     group = create_group
     pat = create_user(:name => "Pat")
-    group.add(pat)
+    group.add(pat) # Good!
 
 !SLIDE
 
-# Helpers Are Good
+@@@ ruby
+
+    # Bad!
+    group = create_user
+    pat = create_user(:name => "Pat")
+    add(group, pat) # No need for a test helper
+
+!SLIDE
+
+# Pick the right test helpers
 
 !SLIDE
 
